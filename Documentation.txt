@@ -1,0 +1,2 @@
+use "rnf" for getting initial template 
+use "rnss" for getting sytlesheet template
