@@ -1,12 +1,13 @@
 import React from 'react';
-import { ImageBackground } from 'react-native-web';
+import { ImageBackground, StyleSheet, Image } from 'react-native';
 
 function WelcomeScreen(props) {
     return (
-      <ImageBackground
-      style={StyleSheet.background}
-      source={require('../assets/bg.jpg')}
-      >
+
+            <ImageBackground
+      style={styles.background}
+      resizeMode="cover"
+      source={require("../assets/bg.jpg")}>
 
       </ImageBackground>
     );
@@ -14,7 +15,7 @@ function WelcomeScreen(props) {
 const styles = StyleSheet.create({
   background:{
     flex:1,
-  }
-})
+  },
+});
 
 export default WelcomeScreen;
